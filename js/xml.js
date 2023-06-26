@@ -9,7 +9,7 @@ function loadDataXML() {
         document.getElementById("resultxml").innerHTML = "Error data loading";
       }
     };
-    xhr.open("GET", "/json/taskb.json", true);
+    xhr.open("GET", "json/taskb.json", true);
     xhr.send();
   }
 
