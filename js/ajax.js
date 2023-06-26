@@ -12,6 +12,6 @@ function loadData() {
     }
   };
 
-  xhr.open("GET", "/data/data.txt", true);
+  xhr.open("GET", "data/data.txt", true);
   xhr.send();
 }
