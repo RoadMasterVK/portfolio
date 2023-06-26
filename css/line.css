@@ -1,0 +1,27 @@
+
+  .container_line {
+    position: relative;
+    width: 20em;
+    height: 20em;
+    overflow: hidden;
+    background-color: #000;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: calc(var(--index) *0.7);
+  }
+
+  .line {
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    animation: moveLine linear infinite;
+    transform-origin: center;
+  }
+
+  @keyframes moveLine {
+    0% {
+      transform: translate(-100%, -100%) rotate(0deg) skewX(0deg);
+    }
+    100% {
+      transform: translate(100%, 100%) rotate(360deg) skewX(-60deg);
+    }
+  }

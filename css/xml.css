@@ -1,0 +1,56 @@
+.container_xml {
+  width: 27em;
+  height: 17em;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  text-align: start;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  font-size: calc(var(--index) *0.7);
+  overflow: auto; 
+}
+.container_xml p {
+  font-size: calc(var(--index) *0.4);
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 3px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+
+@media (max-width: 768px) {
+  .container_xml {
+    width: 100%;
+    height: auto;
+    max-height: 17em;
+    padding: 10px;
+    overflow: auto;
+  }
+
+  .container_xml p {
+    font-size: calc(var(--index) *0.6);
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+
+  table {
+    font-size: calc(var(--index) *0.6);
+  }
+}

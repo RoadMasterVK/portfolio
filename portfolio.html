@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/semantics.css">
+  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+  <link rel="stylesheet" type="text/css" href="css/nav2.css">
+
+  <link rel="stylesheet" type="text/css" href="css/transitions.css">
+  <script src="js/transitions.js" defer></script>
+
+  <link rel="stylesheet" type="text/css" href="css/css3.css">
+
+  <link rel="stylesheet" type="text/css" href="css/ajax.css">
+  <script src="js/ajax.js" defer></script>
+
+  <link rel="stylesheet" type="text/css" href="css/canvas.css">
+  <script src="js/canvas.js" defer></script>
+
+  <link rel="stylesheet" type="text/css" href="css/line.css">
+  <script src="js/line.js" defer></script>
+
+ <link rel="stylesheet" type="text/css" href="css/xml.css">
+  <script src="js/xml.js" defer></script>
+</head>
+
+<body>
+  <header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="chat.html">Chat</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="imagemap.html">Imagemap</a></li>
+      <li><a href="worker.html">Worker</a></li>
+      <li><a href="map.html">Map</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <!--<div class="content-container"> -->
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <h3>Transitions Java Scripts</h3>
+          <div class="container_square">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+          </div>
+    </div>
+    <div class="portfolio-item">
+      <h3>CSS3 Effects</h3>
+          <div class="container_css3">
+          <div class="effect1">rotate (45deg)</div>
+          <div class="effect2">scale</div>
+          <div class="effect3">opacity</div>
+          <div class="effect4">font color</div>
+          <div class="effect5">position</div>
+          <div class="effect6">box shadow</div>
+          <div class="effect7">border</div>
+          <div class="effect8">linear gradient</div>
+          <div class="effect9">rotate (-45deg)</div>
+          </div>
+    </div>
+    <div class="portfolio-item">
+      <h3>AJAX</h3>
+      <div class="container_ajax">
+        <div id="result"></div>
+      </div>
+      <br>
+      <button onclick="loadData()">Load Data</button>
+    </div>
+    <div class="portfolio-item">
+      <h3>Canvas</h3>
+        <div class="container_canvas">
+          <canvas id="myCanvas" height="210" width="270"></canvas>
+        </div>
+    </div>
+    <div class="portfolio-item">
+      <h3>Animation Keyframes</h3>
+      <div class="container_line"> </div>
+    </div>
+    <div class="portfolio-item">
+      <h3>XMLHttpRequest</h3>
+      <div class="container_xml">
+      <table id="yourTableId">
+        <tr>
+          <th>Number</th>
+          <th>Task</th>
+          <th>Completed</th>
+        </tr>
+      </table>
+    </div>
+   <button onclick="loadDataXML()">Load Data</button>
+    </div>
+    <!-- ... -->
+  </div>
+ <!-- .</div>.. -->
+</main>
+  <footer>
+    <p>© 2023 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
