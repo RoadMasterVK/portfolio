@@ -90,3 +90,16 @@
     }
   }
   
+  /* Styles for printing */
+@media print {
+  h1, h2, h3, h4 {
+    font-style: normal; /* Убрать курсив для заголовков */
+    line-height: 1.2; /* Настройте интервал между строками для заголовков */
+  }
+nav{
+    display: none;
+  }
+footer{
+  display:none;
+}
+}

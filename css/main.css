@@ -64,17 +64,16 @@
 	line-height: 1.75;
 }
 footer {
-    width: 90%;
-    height: 10%;
-    margin: 10px;
-    flex-shrink: 0;
+    width: 40%;
+    margin-top: 10%;
+	position: relative;
 }
 @media (max-width: 767px) {
 	.hero {
-	  width: calc(var(--index) * 28);
+	  width: calc(var(--index) * 20);
 	  position: absolute;
-	  left: 50vw;
-	  top: -9vh;
+	  left: 38vw;
+	  top: 4vh;
 	  z-index: -1;
 	}
   
@@ -88,18 +87,18 @@ footer {
 	}
   
 	.main-title {
-	  font-size: calc(var(--index) * 4);
+	  font-size: calc(var(--index) * 3);
 	  position: absolute;
 	  width: min-content;
-	  bottom: 8vh;
+	  bottom: 18vh;
 	  line-height: .9;
 	}
   
 	.main-title2 {
-	  font-size: calc(var(--index) * 1.5);
+	  font-size: calc(var(--index) * 1.2);
 	  color: rgb(204, 153, 87);
 	  position: absolute;
-	  bottom: 3vh;
+	  bottom: 14vh;
 	}
   
 	.gallery {
@@ -146,4 +145,8 @@ footer {
 	  flex-shrink: 0;
 	}
   }
-  
+  @media print {
+	body {
+		display: none;
+	  }
+  }

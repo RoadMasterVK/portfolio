@@ -34,23 +34,3 @@ th {
 
 
 
-@media (max-width: 768px) {
-  .container_xml {
-    width: 100%;
-    height: auto;
-    max-height: 17em;
-    padding: 10px;
-    overflow: auto;
-  }
-
-  .container_xml p {
-    font-size: calc(var(--index) *0.6);
-    white-space: normal;
-    overflow: visible;
-    text-overflow: clip;
-  }
-
-  table {
-    font-size: calc(var(--index) *0.6);
-  }
-}

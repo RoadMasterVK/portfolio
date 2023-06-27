@@ -8,14 +8,17 @@
 h1,h2,h3,h4{
   font-size: calc(var(--index) *1.2);
   font-style: italic;
+  line-height: 1.5;
 }
 .key-skills li {
   font-size: calc(var(--index) *0.8);
   margin-left: 50px;
+  line-height: 2;
 }
 .personal-profile p {
   font-size: calc(var(--index) *0.8);
   margin-left: 30px;
+  line-height: 2;
 }
 @media (max-width: 767px) {
   #about {
@@ -25,15 +28,46 @@ h1,h2,h3,h4{
 
   h1, h2, h3, h4 {
     font-size: calc(var(--index) * 1);
+    line-height: 1.5;
   }
 
   .key-skills li {
     font-size: calc(var(--index) * 0.6);
     margin-left: 30px;
+    line-height: 2;
+    
   }
 
   .personal-profile p {
     font-size: calc(var(--index) * 0.6);
     margin-left: 20px;
+    line-height: 2;
+  }
+}
+@media print {
+  #about {
+    margin-top: 0;
+    font-size: 12pt; /* Настройте размер шрифта для печати */
+    min-height: auto; /* Сброс минимальной высоты, если не требуется */
+  }
+
+  h1, h2, h3, h4 {
+    font-style: normal; /* Убрать курсив для заголовков */
+    line-height: 1.2; /* Настройте интервал между строками для заголовков */
+  }
+  nav{
+    display: none;
+  }
+footer{
+  display:none;
+}
+  .key-skills li {
+    margin-left: 0; /* Убрать отступ слева для списков */
+    line-height: 1.2; /* Настройте интервал между строками для списков */
+  }
+
+  .personal-profile p {
+    margin-left: 0; /* Убрать отступ слева для абзацев */
+    line-height: 1.2; /* Настройте интервал между строками для абзацев */
   }
 }

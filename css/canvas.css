@@ -2,7 +2,7 @@
     width: 20em;
     height: 20em;
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: rgb(240, 0, 0);
     border: 1px solid rgb(255, 255, 255);
     text-align: center;
     display: flex;
@@ -12,6 +12,7 @@
     
   }
 canvas {
-   
-    border: 1px solid rgb(255, 255, 255);
+  width: 80%;
+  height: 80%;
+  border: 1px solid rgb(255, 255, 255);
   }

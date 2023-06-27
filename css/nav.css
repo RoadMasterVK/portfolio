@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--index: calc(1vw + 1vh);
+	--color-header: #f4efec;
+	--color-text: #cdc6c3;
+	--gallery-gap: calc(var(--index) * 5.5)
+}
+@font-face {
+	font-family: raleway-c;
+	src: url(../fonts/raleway-regular.woff2);
+}
+@font-face {
+	font-family: outfit-c;
+	src: url(../fonts/outfit-regular.woff2);
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: outfit-c;
+}
+/* will-change */
+.content, .hero, .main-header, .gallery > * {
+	will-change: transform;
+}
+body {
+	
+	background-color:black;
+	background-size: 100px;
+	color: #fafafa;
+	font-family: raleway-c;
+	overflow-x: hidden;
+}
+
+.main-header {
+	margin-left: 4%;
+	height: 60vh;
+	
+}
+.container {
+	padding: 0 6vw;
+}
+
+nav{
+  font-size: calc(var(--index) *1);
+  margin-top: 2%;
+  margin-left: 2%;
+  display:flex;
+  z-index: 99;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fbf9f9;
+  text-decoration: none;
+  padding: 0.5em;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: transparent;
+  padding: 0.5em;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 99;
+}
+
+nav ul li:hover > ul {
+  display: flex;
+  flex-direction: row;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+nav ul ul li {
+  display: inline-block;
+}
+
+nav ul ul li a {
+  color: #ffffff;
+}
+
+nav ul ul li:hover > ul {
+  display: none;
+}
+
+nav ul li:hover > a {
+  color: #ff1493;
+}
+
+nav ul li:hover > ul li:hover > a {
+  color: #ff1493;
+}
+
+nav ul ul li a:hover {
+  color: #ff1493;
+}
+
+nav ul ul {
+  top: 100%;
+  left: 0;
+}
+@media (max-width: 767px) {
+  .main-header {
+    height: 40vh;
+  }
+
+  .container {
+    padding: 0 2vw;
+  }
+
+  nav {
+    font-size: calc(var(--index) * 1.3);
+    margin-top: 1%;
+    margin-left: 1%;
+  }
+
+  nav ul li a {
+    padding: 0.3em;
+  }
+
+  nav ul ul {
+    padding: 0.3em;
+  }
+}
+@media print {
+  h1, h2, h3, h4 {
+    font-style: normal; /* Убрать курсив для заголовков */
+    line-height: 1.2; /* Настройте интервал между строками для заголовков */
+  }
+nav{
+    display: none;
+  }
+footer{
+  display:none;
+}
+}

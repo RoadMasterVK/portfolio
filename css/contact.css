@@ -110,4 +110,26 @@
       width: 100%;
     }
   }
-  
+  @media print {
+    /* Styles specific to print media */
+    .contact-form {
+      display: none; /* Hide the contact form during printing */
+    }
+    
+    .contact-info h2 {
+      margin-top: 0; /* Remove top margin from the heading */
+    }
+    
+    .contact-info p:not(:last-child) {
+      margin-bottom: 0; /* Remove bottom margin from paragraphs except the last one */
+    }
+    
+    .contact-link::after {
+      content: attr(data-print-text);
+    }
+    
+    .contact-info a.contact-link {
+      display: inline-block; /* Ensure the link is displayed inline */
+      margin-bottom: 5px; /* Add some spacing between the links */
+    }
+  }
