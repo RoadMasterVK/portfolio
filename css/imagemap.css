@@ -11,6 +11,35 @@
     height: auto;
     zoom: 2;
   }
+  .map-container-info{
+    margin-top: 30px;
+    display: block;
+    width: 500px;
+    height: auto;
+    zoom: 2;
+  }
+
+  .tooltip {
+    position: relative;
+  }
+  
+  .tooltip::after {
+    content: attr(alt);
+    position: absolute;
+    top: 5px; /* Расстояние от подсказки до элемента */
+    left:-19vw;
+    background-color: #ff1493;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: calc(var(--index) *1.5);
+  }
+  
+  .tooltip:hover::after {
+    opacity: 1;
+  }
   @media (max-width: 767px) {
     .map-container {
       margin: 20px;
@@ -19,7 +48,14 @@
   
     .map-container img {
       width: 100%;
-      max-width: 300px;
+     max-width: 500px;
+      height: auto;
+      zoom: 1;
+    }
+    .map-container-info{
+      margin-top: 30px;
+      width: 100%;
+      max-width: 500px;
       height: auto;
       zoom: 1;
     }
