@@ -31,30 +31,38 @@
   </header>
    <main> 
 
-    <h1>Clickable Image Areas</h1>
+    
     <div class="map-container">
       <img id="kartina" src="imagemap/shape.jpg" alt="Image Map" usemap="#image-map">
       <map name="image-map">
-        <area shape="rect" coords="30,35,95,120" href="https://www.europosters.ie/" target="_blank" alt="Poster">
-        <area shape="rect" coords="192,85,316,168" href="https://www.apple.com/imac-24/" target="_blank" alt="iMac">
-        <area shape="rect" coords="411,39,456,84" href="https://calendar.google.com/" target="_blank" alt="Calendar">
-        <area shape="rect" coords="380,134,426,168" href="https://www.google.com/search?q=photo+yellow" target="_blank" alt="yPhoto">
-        <area shape="rect" coords="421,107,463,166" href="https://www.google.com/search?q=photo+blue" target="_blank" alt="bPhoto">
-        <area shape="rect" coords="169,177,188,201" href="https://www.google.com/search?q=cup" target="_blank" alt="Cup">
-        <area shape="rect" coords="115,142,172,171" href="https://www.librariesireland.ie/" target="_blank" alt="Book">
-        <area shape="rect" coords="75,184,148,198" href="https://www.google.com/search?q=notebook" target="_blank" alt="NoteBook">
-        <area shape="rect" coords="389,182,437,186" href="https://penstore.ie/" target="_blank" alt="Pen">
-        <area shape="poly" coords="121,132,130,131,141,133,153,131,160,133,157,139,145,140,140,134,135,140,122,140,121,132" href="https://www.visionexpress.ie/glasses" target="_blank" alt="Glasses">
-        <area shape="poly" coords="327,113,335,107,371,108,378,113,359,143,362,168,342,168,342,146,327,113" href="https://flowers.ie/" target="_blank" alt="flowers">
-        <area shape="poly" coords="214,192,291,193,299,199,208,199,214,192" href="https://www.apple.com/ie/shop/mac/accessories/mice-keyboards" target="_blank" alt="Polo1">
-        <area shape="poly" coords="110,44,130,37,139,66,120,73,110,44" href="https://www.google.com/search?q=polaroid+photos+yellow" target="_blank" alt="Polo1">
-        <area shape="poly" coords="121,92,141,86,150,112,130,119,121,92" href="https://www.google.com/search?q=polaroid+photos+brown" target="_blank" alt="Polo2">
-        <area shape="poly" coords="145,54,166,59,159,87,138,81,145,54" href="https://www.google.com/search?q=polaroid+photos+dark+brown" target="_blank" alt="Polo3">
-        <area shape="poly" coords="307,189,333,174,373,185,349,202,307,189" href="https://www.apple.com/ipad/" target="_blank" alt="ipad">
-        <area shape="circle" coords="358,70,28" href="https://www.timeanddate.com/worldclock/fullscreen.html?n=78" target="_blank" alt="Clock">
-        <area shape="circle" coords="95,156,10" href="https://vclock.com/" target="_blank" alt="Alarm"> 
+        <area class="tooltip" shape="rect" coords="30,35,95,120" href="https://www.europosters.ie/" target="_blank" alt="Poster">
+        <area class="tooltip" shape="rect" coords="192,85,316,168" href="https://www.apple.com/imac-24/" target="_blank" alt="iMac">
+        <area class="tooltip" shape="rect" coords="411,39,456,84" href="https://calendar.google.com/" target="_blank" alt="Calendar">
+        <area class="tooltip" shape="rect" coords="380,134,426,168" href="https://www.google.com/search?q=photo+yellow" target="_blank" alt="Yellow Photo">
+        <area class="tooltip" shape="rect" coords="421,107,463,166" href="https://www.google.com/search?q=photo+blue" target="_blank" alt="Blue Photo">
+        <area class="tooltip" shape="rect" coords="169,177,188,201" href="https://www.google.com/search?q=cup" target="_blank" alt="Cup">
+        <area class="tooltip" shape="rect" coords="115,142,172,171" href="https://www.librariesireland.ie/" target="_blank" alt="Book">
+        <area class="tooltip" shape="rect" coords="75,184,148,198" href="https://www.google.com/search?q=notebook" target="_blank" alt="NoteBook">
+        <area class="tooltip" shape="rect" coords="389,182,437,186" href="https://penstore.ie/" target="_blank" alt="Pen">
+        <area class="tooltip" shape="poly" coords="121,132,130,131,141,133,153,131,160,133,157,139,145,140,140,134,135,140,122,140,121,132" href="https://www.visionexpress.ie/glasses" target="_blank" alt="Glasses">
+        <area class="tooltip" shape="poly" coords="327,113,335,107,371,108,378,113,359,143,362,168,342,168,342,146,327,113" href="https://flowers.ie/" target="_blank" alt="flowers">
+        <area class="tooltip" shape="poly" coords="214,192,291,193,299,199,208,199,214,192" href="https://www.apple.com/ie/shop/mac/accessories/mice-keyboards" target="_blank" alt="Keyboard">
+        <area class="tooltip" shape="poly" coords="110,44,130,37,139,66,120,73,110,44" href="https://www.google.com/search?q=polaroid+photos+yellow" target="_blank" alt="Photo1">
+        <area class="tooltip" shape="poly" coords="121,92,141,86,150,112,130,119,121,92" href="https://www.google.com/search?q=polaroid+photos+brown" target="_blank" alt="Photo2">
+        <area class="tooltip" shape="poly" coords="145,54,166,59,159,87,138,81,145,54" href="https://www.google.com/search?q=polaroid+photos+dark+brown" target="_blank" alt="Photo3">
+        <area class="tooltip" shape="poly" coords="307,189,333,174,373,185,349,202,307,189" href="https://www.apple.com/ipad/" target="_blank" alt="ipad">
+        <area class="tooltip" shape="circle" coords="358,70,28" href="https://www.timeanddate.com/worldclock/fullscreen.html?n=78" target="_blank" alt="Clock">
+        <area class="tooltip" shape="circle" coords="95,156,10" href="https://vclock.com/" target="_blank" alt="Alarm"> 
     </map>
+    <br>
+    <h1>Clickable Image Areas</h1>
+    <div class="map-container-info">
+      <p>Image Map is a web development technique that allows you to make certain areas of an image clickable and associate them with certain actions or links. When a user clicks on a specific area of an image, a specific action is performed or a link is opened.</p>
     </div>
+    </div>
+   
+
+    
 </main>
 <footer>
     <p>© 2023 My Website. All rights reserved.</p>
